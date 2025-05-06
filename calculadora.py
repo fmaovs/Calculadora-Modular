@@ -1,4 +1,4 @@
-from operaciones import Resta, Potencia, Division, DivisionEntera
+from operaciones import Resta, Potencia, Division, DivisionEntera, Suma, Multiplicacion
 
 
 
@@ -10,6 +10,8 @@ try:
                       "/ para dividir\n"
                       "// para division entera\n"
                       "** para potencia\n"
+                      "+ para sumar\n"
+                      "* multiplicacion\n"
                       )
     if operacion == "-":
         Resta(a,b)
@@ -19,6 +21,10 @@ try:
         DivisionEntera(a,b)
     elif operacion == "**":
         Potencia(a,b)
+    elif operacion =="+" :
+        Suma (a,b)
+    elif operacion =="*":
+        Multiplicacion (a,b)
     else:print("Error vuelve a intertar")
 except ValueError as e:
     print(f"{e}")

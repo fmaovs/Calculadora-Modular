@@ -34,4 +34,22 @@ def Potencia(a,b):
         print("Invalid input.")
     else:
         print("Result: ", result)
-        
+
+"_____________________________________________"
+
+def Suma(a,b):
+    try:
+        suma = a + b
+    except ValueError:
+        print("Invalid input. Please enter a number.")
+    else:
+        print("Result:", suma)
+
+
+def Multiplicacion(a,b):
+    try:
+        multiplicacion = a * b
+    except ValueError:
+        print("Invalid input. Please enter a number.")
+    else:
+        print("Result:", multiplicacion)
